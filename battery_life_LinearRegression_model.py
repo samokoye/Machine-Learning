@@ -32,6 +32,7 @@ For instance if there are 2 test cases with expected answer 4 and you print 3 fo
 '''
 
 #!/bin/python3
+#!/bin/python3
 
 import math
 import os
@@ -55,10 +56,7 @@ def batlife(timeCharged):
     y_train = y_train.values.reshape(-1,1)
     model = LinearRegression()
     model.fit(X_train, y_train)
-
-    # read input from user
-    #input_time = float(input("Enter charging time: "))
-
+    
     # use model to predict battery life for input time
     
     if(timeCharged<4.0):
